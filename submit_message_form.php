@@ -3,21 +3,38 @@
 body {font-family: sans-serif;} * {box-sizing: border-box;}
 input[type=submit],  {
     width: 100%;
-    padding: 15px;
+    padding: 15x;
     margin: 6px 0 16px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
 }
-button {
-    background-color: #4CAF50;
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
     cursor: pointer;
-    width: 8%;
 }
+
+.button1 {
+    background-color: green; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
@@ -34,7 +51,7 @@ div textarea {
 <form>
 <input type="text" name="message" placeholder="Type Message"></input>
 <br> 
-<button type="submit">Submit</button> 
+<button class="button button1" type="submit">Submit</button> 
 </form> 
 </html> 
 <?php ?>
