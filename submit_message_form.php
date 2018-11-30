@@ -23,17 +23,16 @@ input[type=submit],  {
     transition-duration: 0.4s;
     cursor: pointer;
 }
-
 .button1 {
     background-color: green; 
     color: black; 
     border: 2px solid #4CAF50;
 }
-
 .button1:hover {
     background-color: #4CAF50;
     color: white;
-}
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}    
 
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
