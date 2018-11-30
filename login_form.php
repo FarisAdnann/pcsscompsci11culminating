@@ -13,10 +13,13 @@ button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    margin: 8px 10px;
+    border: 1px solid green;
     cursor: pointer;
     width: 8%;
+}
+button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
@@ -32,6 +35,8 @@ input[type=text]:focus, input[type=password]:focus {
 <label for="password"><b>Password</b></label><input type="password" name="password" placeholder="Enter Password" required><br>
 <div class="clearfix">
 <button type="submit" name="login" value="Log In"><b>Log In</b>
+<button type="reset" name="erase" value="Erase"><b>Reset</b>
 </div><br>
+<a href="student_registration.php">Sign Up!</a>
 </div>
 </form>
