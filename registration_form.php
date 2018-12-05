@@ -38,8 +38,7 @@ input[type=text]:focus, input[type=password]:focus {
 <input type="text" name="username" placeholder="Enter Username" pattern=".{6,16}" required title="6 to 16 characters"><br>
 <label for="password"><b>Password</b></label>
 <input type="password" name="password" placeholder="Enter Password" pattern="(?=.*\d).{8,16}" required title="Must contain at least one number and be within 8 to 16 characters"><br>
-<label for="password1"><b>Confirm Password</b></label><input type="password" name="password1" placeholder="Retype Password" required><br>
-<div class="clearfix">
+<div>
 <button type="submit" name="register" value="Register"><b>Register</b>
 <button type="reset" name="erase" value="Erase"><b>Reset</b>
 </div>
@@ -48,15 +47,16 @@ input[type=text]:focus, input[type=password]:focus {
 </div>
 </form>
 <?php
-$password = $_POST['password'];
-$confirmpassword = $_POST['password1'];
-$password = stripslashes($password);
-$confirmpassword = stripslashes($confirmpassword);
-if ($password != $confirmpassword) {
-echo "Error... Passwords do not match";
-exit;
-} else {
-  echo "YOU DID IT!!"
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$username = test_input($_POST["username"]);
+$password = test_input($_POST["password"]);
+if (isset($_POST['register'])) header('Location: test.php');
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
 }
 ?>
 </body>
