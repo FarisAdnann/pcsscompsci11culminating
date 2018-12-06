@@ -7,7 +7,6 @@
     body {
     
 }
-
 .sidebar {
     height: 100%;
     width: 180px;
@@ -22,7 +21,6 @@
    a {
    line-height: 50px;
 }
-
 .sidebar a {
     text-decoration: none;
         position: auto;
@@ -31,7 +29,6 @@
     color: maroon;
     
 }
-
 .sidebar a:hover {
     color: green;
 padding-left: 20px;    
@@ -39,7 +36,6 @@ background-color: cyan;
 </style>
 </head>
 <body>
-
 <div class="sidebar">
     <h4>Navigation Help</h4>
   <a href="#">About</a>
