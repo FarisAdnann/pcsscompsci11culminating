@@ -53,3 +53,5 @@ function test_input($data) {
   return $data;
 }
 ?>
+</body>
+</html>
