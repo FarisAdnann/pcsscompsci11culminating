@@ -1,5 +1,5 @@
 <?php
-include 'faris_connectDB.php'
+include 'faris_connectDB.php';
 $sql = "INSERT INTO mylogin (username, password)
 VALUES ('$username', '$password')";
 
