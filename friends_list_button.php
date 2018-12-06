@@ -3,7 +3,7 @@
     <head>
 <style>
 button {
-    background-color: red;
+    background-color: #33cc33; 
     color: white;
     padding: 20px 20px;
     margin: 10px 10;
@@ -23,13 +23,13 @@ button:active {
 .dropdown-list {
     display: none;
     position: absolute;
-    background-color:lightyellow;
+    background-color: #33cc33;
     min-width: 150px;
    
 }
 
 .dropdown-list a {
-    color: maroon;
+    color: black;
     padding: 25px 50px;
     text-decoration: none;
     display: block;
