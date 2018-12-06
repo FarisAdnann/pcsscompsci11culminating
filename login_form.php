@@ -40,3 +40,16 @@ input[type=text]:focus, input[type=password]:focus {
 <a href="registration_form.php">Sign Up!</a>
 </div>
 </form>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$username = test_input($_POST["username"]);
+$password = test_input($_POST["password"]);
+if (isset($_POST['register'])) header('Location: test.php');
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
